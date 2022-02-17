@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.woff2),
+        url(../fonts/Roboto-Regular.woff);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.woff2),
+        url(../fonts/Roboto-Bold.woff);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url(../fonts/MuseoSansCyrl-700.woff2),
+        url(../fonts/MuseoSansCyrl-700.woff);
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 116.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+// Blocks
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/media';

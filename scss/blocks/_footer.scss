@@ -1,0 +1,41 @@
+.footer {
+    padding: 2rem 0;
+    background: #030102;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        opacity: 0.4;
+        font-size: 1.4rem;
+        line-height: 142%;
+    }
+
+    &__right {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        &-item:not(:last-child) {
+            margin-right: 2.5rem;
+        }
+
+        &-item {
+            a {
+                color: #fff;
+                opacity: 0.4;
+                text-decoration: none;
+                font-size: 1.4rem;
+                line-height: 142%;
+                transition: color 0.4s ease;
+
+                &:hover {
+                    color: #db2020;
+                }
+            }
+        }
+    }
+}

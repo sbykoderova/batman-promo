@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 7.9rem;
+        height: 2.8rem;
+        margin-right: 3.9rem;
+    }
+
+    &__nav {
+        a:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+
+        a {
+            color: inherit;
+            font-size: 1.4rem;
+            line-height: 114%;
+            text-decoration: none;
+            padding-bottom: .4rem;
+            transition: border-bottom 0.3s ease;
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        &-icon {
+            width: 1.7rem;
+            height: 1.6rem;
+
+            img {
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.4);
+                }
+            }
+        }
+
+        &-icon:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.burger {
+    display: none;
+
+    &._active {
+        z-index: 4;
+
+        span {
+            transform: scale(0) translate(0px, -50%);
+        }
+    }
+
+    &._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    &._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+}
+
+.burger__menu {
+    display: none;
+}
